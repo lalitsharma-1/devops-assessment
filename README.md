@@ -13,7 +13,7 @@ This project deploys a Node.js web application on an AWS Kubernetes cluster with
 - kubectl
 - Helm
 
-### 1. Clone the Repository
+
 ```bash
 git clone <REPO_URL>
 cd devops-assessment
