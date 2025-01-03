@@ -15,7 +15,7 @@ This project deploys a Node.js web application on an AWS Kubernetes cluster with
 
 
 ```bash
-git clone <REPO_URL>
+git clone https://github.com/lalitsharma-1/devops-assessment.git
 cd devops-assessment
 
 2. Build and Push Docker Image
