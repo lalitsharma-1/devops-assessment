@@ -1,0 +1,18 @@
+a. How do you make the service scalable?
+   ---Horizontal Pod Autoscaler (HPA): Scale pods based on CPU/Memory usage
+   ---Cluster Autoscaler: Use AWS Auto Scaling Groups to add/remove nodes based on demand.
+
+b. What CI/CD pipeline would you use (if not done in code, please describe every
+   step from the commit of new code until the new code is running in production)?
+   ---Developer Commit -> Build -> Test -> Staging Deployment ->Approval -> Production Deployment
+
+c. How would you store and deploy secrets (such as API keys)?
+   --- Use Kubernetes Secrets & Reference the secret in your Deployment YAML
+
+d. How do you test how well your infrastructure scales (when many requests come
+   in)?
+   --- Use k6 or Apache JMeter for load testing
+
+e. How do you provide an SSL certificate for your service?
+   --- Use AWS Certificate Manager (ACM) to issue an SSL certificate
+   ---Attach the certificate ARN to the Kubernetes Service annotations
